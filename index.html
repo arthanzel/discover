@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+	<title>Discover</title>
+	
+	<script src="lib/jquery.min.js"></script> 
+	<script type="text/javascript">
+		$(function() {
+			var content = $("#content");
+			var earth = $("#bigEarth");
+			var h = $(window).height();
+			
+			content.css({
+				left: 1050 * (h / 1600),
+				top: h / 2 - content.height() / 2,
+				visibility: "visible"
+			});
+		});
+	</script>
+	
+	<style>
+		html, body {
+			margin: 0px;
+		}
+	
+		body {
+			background-color: black;
+			color: #f8f8f8;
+			font-family: "Segoe UI";
+		}
+		
+		#bigEarth {
+			height: 100%;
+			left: 0px;
+			position: absolute;
+			top: 0px;
+		}
+		
+		#content {
+			left: 0px;
+			position: absolute;
+			top: 0px;
+			visibility: hidden;
+		}
+		#content div {
+			margin-bottom: 40px;
+		}
+		
+		.big {
+			font-size: 65pt;
+		}
+		
+		.description {
+			font-size: 13pt;
+			font-style: oblique;
+		}
+		
+		.link {
+			font-size: 35pt;
+		}
+		
+		a {
+			color: white;
+		}
+		
+		.quiet {
+			color: #555;
+		}
+	</style>
+</head>
+<body>
+	<img id="bigEarth" src="r/bigearth.jpg" />
+	<div id="content">
+		<div class="big">discover</div>
+		<div class="description">An interactive exploration of our civilization
+<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and the energy that keeps it going.</div>
+		<div class="link"><a href="discover.html">enter</a></div>
+		<div class="description quiet">Works best in fullscreen. with speakers on.</div>
+	</div>
+</body>
+</html>

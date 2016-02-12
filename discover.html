@@ -1,0 +1,35 @@
+
+<html>
+<head>
+	<title>discovery</title>
+	
+	<link rel="stylesheet" href="style.css" />
+	
+	<script src="lib/jquery.min.js"></script>
+	<script src="lib/easing.js"></script>
+	<script src="lib/RequestAnimationFrame.js"></script>
+	<script src="lib/three.js"></script>
+	
+	<script src="r/R.js"></script>
+	<script src="r/Strings.js"></script>
+	
+	<script src="src/main.js"></script>
+	<script src="src/util.js"></script>
+	<script src="src/screen/Screen.js"></script>
+	<script src="src/screen/EarthScreen.js"></script>
+	<script src="src/screen/TeaserTextScreen.js"></script>
+	<script src="src/screen/GraphScreen.js"></script>
+	<script src="src/screen/ExploreTextScreen.js"></script>
+	<script src="src/screen/EarthZoomScreen.js"></script>
+	<script src="src/screen/InfoScreen.js"></script>
+</head>
+<body onload="main();">
+	<div id="gl-container"></div>
+	<div id="mk-container"></div>
+	<div id="overlay"></div>
+	<audio id="audio" src="r/discovery.mp3"></audio>
+	<audio id="audio-earth" loop="loop">
+		<source src="r/Discovery-Mix.mp3" />
+	</audio>
+</body>
+</html>

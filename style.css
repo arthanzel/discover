@@ -1,0 +1,131 @@
+﻿body {
+	background-color: black;
+	cursor: none;
+	margin: 0px;
+	overflow: hidden;
+}
+
+#gl-container {
+	background-color: black;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+#mk-container {
+	color: white;
+	font-family: Arial;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 3;
+}
+
+#overlay {
+	background-color: black;
+	display: none;
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+}
+
+.cursor {
+	position: fixed;
+	z-index: 200;
+}
+
+.teaser {
+	font-size: 32pt;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+}
+
+.graphText {
+	display: none;
+	font-size: 32pt;
+	font-weight: bold;
+	left: 700px;
+	position: relative;
+}
+
+.tooltip {
+	background: #f0f0f0;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#eaeaea));
+	border: 1px solid #444444;
+	color: #222222;
+	display: none;
+	font-family: Arial;
+	font-size: 11pt;
+	padding: 5px;
+	position: fixed;
+	text-align: center;
+}
+
+.infoImage{
+	height: 100%;
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+}
+
+.sidebar {
+	background: rgba(0,0,0,.7);
+	display: none;
+	position: absolute;
+	width: 300px;
+	z-index: 4;
+}
+.sidebar p {
+	color: #e0e0e0;
+	font-family: Arial;
+	font-size: 11pt;
+	line-height: 140%;
+}
+
+.left {
+	bottom: 0px;
+	padding: 15px 15px 15px 7px;
+	left: 0px;
+	top: 0px;
+}
+.left .link {
+	display: block;
+	text-align: right !important;
+}
+
+.right {
+	bottom: 0px;
+	padding: 15px 7px 15px 15px;
+	right: 0px;
+	top: 0px;
+}
+
+.quote {
+	color: white;
+	font-family: "Times New Roman";
+	font-size: 26pt;
+	font-style: oblique;
+	font-weight: bold;
+	line-height: 26pt;
+}
+.quoteDetail {
+	font-family: "Times New Roman";
+	font-size: 12pt;
+	font-style: oblique;
+	text-align: right;
+}
+
+.hidden {
+	display: none;
+}
+
+.link {
+	color: white;
+	text-decoration: underline;
+}
+.link:hover {
+	cursor: pointer;
+}
